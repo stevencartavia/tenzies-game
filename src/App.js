@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState, useEffect} from "react";
+import Game from "./Game";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+    const [start, setStart] = useState(false);
+
+    const startGame = () => {
+        setStart(prevState => !prevState);
+    }
+
+    return (
+        <main>
+            <h1 className="title">Tenzies</h1>
+            {!start && 
+            <p className="instructions">
+                Roll until all dice are the same. 
+                Click each die to freeze it at its current value between rolls.
+            </p>}
+            {start && <Game />}
+            <button 
+                className="start-game-button" 
+                onClick={startGame}
+            >
+                {start ? 'Restart' : 'Start Game'}
+            </button>
+        </main>
+    );
 }
-
-export default App;
