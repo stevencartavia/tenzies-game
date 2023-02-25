@@ -82,10 +82,13 @@ main {
 }
 
 @media(max-width: 900px) {
+    main {
+        height: 900px;
+    }
     .game {
         margin: 0 auto;
         background-color: #F5F5F5;
-        height: 900px;
+        height: 800px;
         border-radius: 5px;
         display: flex;
         flex-direction: column;
