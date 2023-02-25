@@ -83,7 +83,7 @@ main {
 
 @media(max-width: 900px) {
     main {
-        height: 700px;
+        height: 500px;
     }
     .game {
         margin: 0 auto;
