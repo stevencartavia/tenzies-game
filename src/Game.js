@@ -88,7 +88,7 @@ export default function Game() {
     }, [seconds, minutes]);
     
     return (
-        <main>
+        <div className="game">
             <h3>{minutes < 10 ? '0' + minutes : minutes}:{seconds < 10 ? '0' + seconds : seconds}</h3>
             {tenzies && <Confetti className="confetti" />}
             <div className="dice-container">
@@ -101,6 +101,6 @@ export default function Game() {
                 {tenzies ? "New Game" : "Roll"}
             </button>
             <h3>Rolls: {rolls}</h3>
-        </main>
+        </div>
     );
 }
