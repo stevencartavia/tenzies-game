@@ -85,7 +85,7 @@ main {
     .game {
         margin: 0 auto;
         background-color: #F5F5F5;
-        height: 700px;
+        height: 1100px;
         border-radius: 5px;
         display: flex;
         flex-direction: column;
