@@ -21,5 +21,5 @@ Once the development server is running, open your web browser and navigate to ht
 - Gameplay: Players take turns rolling their dice to try and get all 10 dice to show the same number.
 - Roll Dice: Click the "Roll Dice" button to roll your dice. The dice will display random numbers from 1 to 6.
 - Match Dice: If any of your dice match the target number (the number you're trying to achieve), they will be locked in place.
-- Winning: The first player to get all 10 of their dice to show the same number wins the game.
+- Winning: Once you get all 10 of their dice to show the same number wins the game.
 - Reset: Click the "Reset" button to start a new game.
